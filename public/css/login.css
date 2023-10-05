@@ -1,0 +1,68 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0; 
+}
+
+
+.login-box {
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px; 
+}
+
+
+.login-wrap {
+  text-align: center;
+}
+
+
+.login-header h2 {
+  color: #333; 
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+.field {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+.login-btn {
+  background-color: #007bff; 
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.create-account-message {
+  font-size: 14px;
+  color: #888; 
+  margin-top: 10px;
+}
+
+
+.create-account-message a {
+  color: #007bff; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.create-account-message a:hover {
+  text-decoration: underline;
+}

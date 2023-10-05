@@ -1,0 +1,55 @@
+.create-account-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0; 
+}
+
+
+.create-account-box {
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px; 
+}
+
+
+.account-wrap {
+  text-align: center;
+}
+
+
+.account-box-header h2 {
+  color: #333; 
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+.field {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+.signup-btn {
+  background-color: #007bff; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.signup-btn:hover {
+  background-color: #0056b3; 
+}
+

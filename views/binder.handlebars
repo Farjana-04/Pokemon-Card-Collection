@@ -1,0 +1,17 @@
+
+      <div class="card-list">
+        {{#if cards.length}}
+          {{#each cards}}
+            <div class="card">
+              <img src="{{images.small}}" alt="{{name}}">
+            </div>
+            <div>
+             <button class="delete-from-binder-btn" data-card-id="{{card_id}}">Delete</button>
+            </div>
+          {{/each}}
+        {{else}}
+          <p></p>
+        {{/if}}
+      </div>
+
+     <script src="js/button.js"></script>

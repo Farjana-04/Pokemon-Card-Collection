@@ -1,0 +1,28 @@
+
+      <h2>Pokemon Card Search</h2>
+      <form action="/search" method="GET">
+        <input class="text-box" type="text" name="name" placeholder="Enter Pokemon Name">
+        <button class="submit-btn" type="submit">Search</button>
+      </form>
+      <div class="card-list">
+        
+        {{!-- {{#if cards.length}} --}}
+          {{#each cards as | card |}}
+            <div class="card">
+              <img src="{{card.images.small}}" alt="{{card.name}}">
+            </div>
+            {{!-- {{#with ../logged_in}}
+            ugbuyinoun
+            {{/with}} --}}
+            {{#if ../logged_in}}
+            <div>
+              <button class="add-to-binder-btn" data-card-id="{{card.id}}">Add to Binder</button>
+            </div>
+            {{/if}}
+          {{/each}}
+        {{!-- {{else}} --}}
+          {{!-- <p></p> --}}
+        {{!-- {{/if}} --}}
+      </div>
+
+     <script src="js/button.js"></script>
