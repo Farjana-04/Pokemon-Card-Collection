@@ -35,13 +35,7 @@ User.init(
         len: [8],
       },
     },
-    // binder_id: {
-    //   type: DataTypes.INTEGER,
-    //   references: {
-    //     model: "binder",
-    //     key: "id",
-    //   },
-    // },
+    
   },
   {
     hooks: {
