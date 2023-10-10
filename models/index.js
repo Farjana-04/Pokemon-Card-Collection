@@ -2,33 +2,12 @@ const User = require('./User');
 const Card = require('./Card');
 const Binder = require('./Binder');
 
-// User.hasMany(Card, {
-//   foreignKey: "user_id",
-//   onDelete: "CASCADE",
-// });
-
-// Binder.belongsTo(User, {
-//   foreignKey: "user_id",
-// });
-
-// User.hasOne(Binder, {
-//   foreignKey: "user_id",
-//   onDelete: "CASCADE",
-// })
-
-// Binder.hasMany(Card, {
-//   foreignKey: "card_id",
-//   onDelete: "CASCADE",
-// });
+//using the belongsToMany method to establish the many-to-many association between the "User" and "Card" models
 User.belongsToMany(Card, { through: Binder, foreignKey: "user_id" });
 Card.belongsToMany(User, { through: Binder, foreignKey: "card_id" });
 
 
 module.exports = { User, Card, Binder };
-
-
-
-
 
 
 /*
