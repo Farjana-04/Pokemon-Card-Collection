@@ -10,10 +10,16 @@ Card.init(
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
-    },  
+    },
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+
+    },
+      
     imageUrl: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     card_id:{
       type: DataTypes.STRING,

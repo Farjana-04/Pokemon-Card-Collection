@@ -16,7 +16,7 @@
             {{/with}} --}}
             {{#if ../logged_in}}
             <div>
-              <button class="add-to-binder-btn" data-card-id="{{card.id}}">Add to Binder</button>
+              <button class="add-to-binder-btn" data-card-id="{{card.id}}" data-card-name="{{card.name}}" data-card-image="{{card.images.small}}">Add to Binder</button>
             </div>
             {{/if}}
           {{/each}}
@@ -25,4 +25,4 @@
         {{!-- {{/if}} --}}
       </div>
 
-     <script src="js/button.js"></script>
+     <script src="js/binder.js"></script>

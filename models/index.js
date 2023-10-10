@@ -20,8 +20,8 @@ const Binder = require('./Binder');
 //   foreignKey: "card_id",
 //   onDelete: "CASCADE",
 // });
-User.belongsToMany(Card, { through: Binder });
-Card.belongsToMany(User, { through: Binder });
+User.belongsToMany(Card, { through: Binder, foreignKey: "user_id" });
+Card.belongsToMany(User, { through: Binder, foreignKey: "card_id" });
 
 
 module.exports = { User, Card, Binder };

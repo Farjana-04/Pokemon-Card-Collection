@@ -1,5 +1,4 @@
 const signupFormHandler = async (event) => {
-  //had spelling mistake, will lower case p
   event.preventDefault();
   
   const username = document.querySelector("#enter-username").value.trim();
@@ -34,6 +33,4 @@ const signupFormHandler = async (event) => {
 // }
 
 
-document
-  .querySelector(".signup-form")
-  .addEventListener("submit", signupFormHandler);
+document.querySelector(".signup-form").addEventListener("submit", signupFormHandler);
