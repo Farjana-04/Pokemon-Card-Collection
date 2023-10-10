@@ -11,11 +11,7 @@ Binder.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    //Binder don't need name, card has to be a name
-    // name: {
-    //   type: DataTypes.STRING,
-    //   allowNull: false,
-    // },
+    
     user_id: {
       type: DataTypes.INTEGER,
       references: {
