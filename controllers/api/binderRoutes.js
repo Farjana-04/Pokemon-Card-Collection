@@ -18,8 +18,7 @@ router.post("/add", withAuth, async (req, res) => {
   try {
     let binder = await Binder.create({ user_id: userId, card_id: card.id });
     const userData = await User.findByPk(userId, {
-
-      include: [
+        include: [
         {
           model: Card,
         },
