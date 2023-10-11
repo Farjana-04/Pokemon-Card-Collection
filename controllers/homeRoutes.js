@@ -10,7 +10,6 @@ router.get('/', async (req, res) => {
 });
 });
 
-
 router.get("/login", async (req, res) => {
   res.render("login");
 });
@@ -20,7 +19,6 @@ router.get("/signup", async (req, res) => {
   
 });
 
-
 router.get("/binder", withAuth, async (req, res) => {
   const userId = req.session.user_id;
   const userData = await User.findByPk(userId, {
@@ -28,10 +26,7 @@ router.get("/binder", withAuth, async (req, res) => {
     include: [
       {
         model: Card,
-
-        // attributes: ['user_id', 'card_id']
       },
-      
     ]
   });
   let user =await userData.get({plain: true})
