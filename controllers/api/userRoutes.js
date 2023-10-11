@@ -4,11 +4,9 @@ const { Binder, User } = require("../../models");
 router.post("/", async (req, res) => {
   try {
     const userData = await User.create(req.body);
-    // const binderData = await Binder.create({ user_id: userData.id });
-
     req.session.save(() => {
-      req.session.user_id = userData.id;
-      req.session.logged_in = true;
+    req.session.user_id = userData.id;
+    req.session.logged_in = true;
 
       res.status(200).json(userData);
     });
@@ -34,7 +32,7 @@ router.post('/login', (req, res) => {
         res.status(404).json({ message: "Incorrect Password! Try Again!" });
         return;
       }
-        req.session.save(() => {
+      req.session.save(() => {
         req.session.logged_in = true;
         req.session.user_id = dbUserData.id;
         res.json({ user: dbUserData, message: "Logged In!" });
@@ -52,7 +50,7 @@ router.post('/logout', (req, res) => {
   }
 });
 
- // DELETE a card by id
+// DELETE a card by id
 router.delete('/:id', async (req, res) => {
   try {
     const cardData = await Card.destroy({
