@@ -36,7 +36,7 @@ router.post("/add", withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
-
+//delete cards from binder
 router.delete('/delete/:card_id', withAuth, async (req, res) => {
   // Get the authenticated user's ID
   const userId = req.session.user_id;
