@@ -17,15 +17,7 @@ router.get("/login", async (req, res) => {
 
 router.get("/signup", async (req, res) => {
   res.render("signup");
-  // const { username } = req.body;
-
-  // if (existingUsernames.has(username)) {
-  //   res.status(409).send('Username already exists');
-  // } else {
-    
-  //   existingUsernames.add(username);
-  //   res.send('Signup successful');
-  // }
+  
 });
 
 
