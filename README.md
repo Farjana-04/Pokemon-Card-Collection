@@ -23,9 +23,10 @@ Follow the examples on my repo.
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Contributors:
-
+Worked with Team
 
 ## Tests
 Testing is not required
 
-## Deployed Application Link:
+## Deployed Heroku Application Link:
+https://pokemon-card-collection-a3dc9dc21790.herokuapp.com/
