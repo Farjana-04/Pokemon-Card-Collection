@@ -29,8 +29,6 @@ addToBinderButtons.forEach(function (button) {
   });
 });
 
-
-
 const deleteFromBinderButtons = document.querySelectorAll('.delete-from-binder-btn');
 
 deleteFromBinderButtons.forEach(function (button) {
