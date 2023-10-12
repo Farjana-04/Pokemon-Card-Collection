@@ -5,6 +5,7 @@ Pokemon Card Collection is a website that allows the user after logging in or si
 After creating a binder the user will be able to search for any card they have in their collection. They can also delete a card from their binder or delete a binder from their profile. 
 The user is also able to have multiple binders if necessary. This site build completely from scratch and deploy it to Heroku. This app will follow the MVC paradigm in its architectural structure, 
 using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
+![image](https://github.com/Farjana-04/Pokemon-Card-Collection/assets/92415181/5344fa6a-a09b-43e6-96fc-9d9db7bbefa4)
 
 ## Table of Contents
 
