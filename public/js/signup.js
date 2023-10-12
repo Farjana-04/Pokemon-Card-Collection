@@ -21,16 +21,5 @@ const signupFormHandler = async (event) => {
   }
  
 };
-// function handleLoginErr(err) {
-//   $("#alert .msg").text(err.responseJSON);
-//   $("#alert").fadeIn(500);
-// }
-// if (response.status === 409) {
-//   alert('Username already exists');
-// } else if (response.status === 200) {
-//   alert('Signup successful!');
-  
-// }
-
 
 document.querySelector(".signup-form").addEventListener("submit", signupFormHandler);
