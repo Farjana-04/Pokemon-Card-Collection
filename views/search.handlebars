@@ -6,23 +6,18 @@
       </form>
       <div class="card-list">
         
-        {{!-- {{#if cards.length}} --}}
-          {{#each cards as | card |}}
+        {{#each cards as | card |}}
             <div class="card">
               <img src="{{card.images.small}}" alt="{{card.name}}">
             </div>
-            {{!-- {{#with ../logged_in}}
-            ugbuyinoun
-            {{/with}} --}}
+            
             {{#if ../logged_in}}
             <div>
               <button class="add-to-binder-btn" data-card-id="{{card.id}}" data-card-name="{{card.name}}" data-card-image="{{card.images.small}}">Add to Binder</button>
             </div>
             {{/if}}
           {{/each}}
-        {{!-- {{else}} --}}
-          {{!-- <p></p> --}}
-        {{!-- {{/if}} --}}
+        
       </div>
 
      <script src="js/binder.js"></script>
